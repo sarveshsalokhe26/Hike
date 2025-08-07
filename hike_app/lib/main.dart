@@ -23,21 +23,44 @@ class MyStatelessWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.brown,
-
       appBar: AppBar(title: Text('This is the title of the appbar')),
+
       body: Center(
         child: Container(
-          padding: EdgeInsets.all(10),
-          margin: EdgeInsets.all(10),
+          height: 150,
+          width: 300,
+          padding: EdgeInsets.all(30),
+          margin: EdgeInsets.all(30),
 
           decoration: BoxDecoration(
             border: Border.all(color: Colors.black, width: 1),
             color: Colors.white,
             boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.5))],
+            borderRadius: BorderRadius.circular(5),
           ),
 
-          child: Text(
-            'This is the text inside of the container which is located at the center of the screen',
+          //Wrapping the container around the column so that we can add multiple texts and buttons to the container
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment
+                .spaceBetween, //main axis alignment set to center
+            crossAxisAlignment: CrossAxisAlignment.center,
+
+            children: [
+              //Adding text to the container
+              Text(
+                'This is the text that is located inside of the container ',
+                textAlign: TextAlign.center,
+              ),
+
+              ElevatedButton(
+                onPressed: () {
+                  ScaffoldMessenger.of(
+                    context,
+                  ).showSnackBar(SnackBar(content: Text('Button pressed')));
+                },
+                child: Text('Click me'),
+              ),
+            ],
           ),
         ),
       ),
