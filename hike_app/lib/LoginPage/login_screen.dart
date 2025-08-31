@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home_screen.dart'; // Import the HomePage
+import '../Screens/home_screen.dart'; // Import the HomePage
 
 class SignInPage extends StatelessWidget {
   const SignInPage({super.key});

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "258781886380",
+    "project_id": "hike-99ade",
+    "storage_bucket": "hike-99ade.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258781886380:android:2aa76e2c60232333886c09",
+        "android_client_info": {
+          "package_name": "com.example.hike_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1Ec4Q2h2-95K5gE6V5ClT4e2P5c1hbMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:hike_app/Screens/login_screen.dart';
+import 'package:flutter/material.dart'; 
+import 'package:hike_app/LoginPage/login_screen.dart';
 
 //Designing a signup page
 
@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {   
     return MaterialApp(
       title: 'HikeMate',
       debugShowCheckedModeBanner: false,
