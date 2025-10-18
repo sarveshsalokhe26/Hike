@@ -21,13 +21,8 @@ version: 1.0.0+1
 environment:
   sdk: ^3.8.1
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
 dependencies:
+  google_fonts: ^6.2.1
   flutter:
     sdk: flutter
 
@@ -57,6 +52,14 @@ dev_dependencies:
 flutter:
   assets:
     - assets\images\MayBe.jpg
+    - assets\SignUpPage\e3b8c210b90a55cc4d87758a9aa076b0.jpg
+    - assets\SignUpPage\3e1ba2310561992686fc7786af4e5a17.jpg
+    - assets\SignUpPage\Icons\communication.png
+    - assets\SignUpPage\Icons\padlock.png
+    - assets\SignUpPage\5fd8b1ff1110de7118178fe07a048332.jpg
+    - assets\SignUpPage\c43b92c82038a63519a732590f017626.jpg
+    - assets\SignUpPage\768ed799c2aa24186d4b26f30ffffb99.jpg
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

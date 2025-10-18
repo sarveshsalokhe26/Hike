@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hike_app/SignUpPage/signup_screen.dart';
+import 'package:hike_app/AuthPages/SignUpPage/sign_up_screen.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
