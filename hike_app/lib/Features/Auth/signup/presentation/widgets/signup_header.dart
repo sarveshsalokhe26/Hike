@@ -7,27 +7,43 @@ class SignUpHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 60,
+      height: 90, // Increased height to fit both texts
       width: 347,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         image: const DecorationImage(
           image: AssetImage(
-            'assets/SignUpPage/3e1ba2310561992686fc7786af4e5a17.jpg',
+            'assets/SignUpPage/3f34ec97cbf271252c756afa440743ae.jpg',
           ),
           fit: BoxFit.cover,
         ),
         border: Border.all(color: Colors.white70, width: 1),
       ),
       alignment: Alignment.center,
-      child: Text(
-        'HIKE',
-        style: GoogleFonts.amaticSc(
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-          fontSize: 30,
-          letterSpacing: 3,
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center, // Align text in the center
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text(
+            'HIKE',
+            style: GoogleFonts.amaticSc(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 35,
+              letterSpacing: 3,
+            ),
+          ),
+
+          Text(
+            "Find people who heavily fw mountains",
+            style: GoogleFonts.amaticSc(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 18,
+              letterSpacing: 1,
+            ),
+          ),
+        ],
       ),
     );
   }

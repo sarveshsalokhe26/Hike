@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hike_app/Features/Auth/signup/presentation/widgets/signup_background.dart';
 import 'package:hike_app/Features/Auth/signup/presentation/widgets/signup_header.dart';
 import 'package:hike_app/Features/Auth/signup/presentation/widgets/signup_form.dart';
-import 'package:hike_app/Features/Auth/signup/presentation/widgets/signup_footer.dart';
 
 class HikeSignUpScreen extends StatelessWidget {
   const HikeSignUpScreen({super.key});
@@ -13,29 +12,40 @@ class HikeSignUpScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          // Background
           const SignUpBackground(),
+
+          // Slight overlay for dimming
           Container(color: Colors.black.withOpacity(0.1)),
-          SingleChildScrollView(
-            padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 40),
-            child: Column(
-              children: [
-                const SizedBox(height: 60),
-                const SignUpHeader(),
-                const SizedBox(height: 20),
-                const SignUpForm(),
-                const SizedBox(height: 10),
-                Text(
-                  'Find People Who FW This Kind Of Hangouts*',
-                  style: GoogleFonts.cinzelDecorative(
-                    fontSize: 8,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    letterSpacing: 1.2,
-                  ),
+
+          // Centered scrollable content
+          Center(
+            child: SingleChildScrollView(
+              physics: const BouncingScrollPhysics(),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 30,
+                  vertical: 20,
                 ),
-                const SizedBox(height: 10),
-                const SignUpFooter(),
-              ],
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const SignUpHeader(),
+                    const SizedBox(height: 15),
+                    const SignUpForm(),
+                    SizedBox(height: 10),
+                    Text(
+                      'This Could Literally be us*',
+                      style: GoogleFonts.shadowsIntoLightTwo(
+                        fontSize: 9,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        letterSpacing: 1.2,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
           ),
         ],

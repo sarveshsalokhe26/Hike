@@ -56,9 +56,20 @@ flutter:
     - assets\SignUpPage\3e1ba2310561992686fc7786af4e5a17.jpg
     - assets\SignUpPage\Icons\communication.png
     - assets\SignUpPage\Icons\padlock.png
-    - assets\SignUpPage\5fd8b1ff1110de7118178fe07a048332.jpg
-    - assets\SignUpPage\c43b92c82038a63519a732590f017626.jpg
     - assets\SignUpPage\768ed799c2aa24186d4b26f30ffffb99.jpg
+    - assets\SignUpPage\3f34ec97cbf271252c756afa440743ae.jpg
+    - assets\SignUpPage\Icons\search.png
+    - assets\SignUpPage\Icons\apple-logo.png
+    - assets\SignUpPage\Icons\communication (1).png
+    - assets\SignUpPage\ade94889319475e835f26231f1e490dd.jpg
+
+    #Baground Images for signup page
+    - assets\SignUpPage\BagroundImages\f0dfa8f755f98df34d7570161acfc804.jpg
+    - assets\SignUpPage\BagroundImages\177d00c4c560cdcd22532d49a5eba732.jpg
+    - assets\SignUpPage\BagroundImages\3c8e7296a287155876fa385007072088.jpg
+    - assets\SignUpPage\b1cecabf4c9ce21c5f42270c341b860b.jpg
+    - assets\SignUpPage\BagroundImages\c8fbf0fff80e635952e1cf4b40d151ca.jpg
+    - assets\SignUpPage\BagroundImages\ad7b5ceeda4d9504aa0caf110f9edd11.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

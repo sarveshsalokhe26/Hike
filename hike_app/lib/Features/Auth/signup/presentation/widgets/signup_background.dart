@@ -11,7 +11,7 @@ class SignUpBackground extends StatelessWidget {
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-            'assets/SignUpPage/768ed799c2aa24186d4b26f30ffffb99.jpg',
+            'assets/SignUpPage/3f34ec97cbf271252c756afa440743ae.jpg',
           ),
           fit: BoxFit.cover,
         ),
