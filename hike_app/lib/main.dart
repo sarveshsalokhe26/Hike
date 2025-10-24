@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hike_app/Features/auth/signup/presentation/pages/sign_up_screen.dart';
+import 'package:hike_app/Features/auth/signup/pages/sign_up_screen.dart';
 
 void main() {
   runApp(const HikeApp());

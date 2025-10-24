@@ -64,11 +64,9 @@ flutter:
     - assets\SignUpPage\ade94889319475e835f26231f1e490dd.jpg
 
     #Baground Images for signup page
-    - assets\SignUpPage\BagroundImages\f0dfa8f755f98df34d7570161acfc804.jpg
-    - assets\SignUpPage\BagroundImages\177d00c4c560cdcd22532d49a5eba732.jpg
+    - assets\SignUpPage\BagroundImages\bac77e0cd44c720a3598933ad770c67b.jpg
+    - assets\SignUpPage\3f34ec97cbf271252c756afa440743ae.jpg
     - assets\SignUpPage\BagroundImages\3c8e7296a287155876fa385007072088.jpg
-    - assets\SignUpPage\b1cecabf4c9ce21c5f42270c341b860b.jpg
-    - assets\SignUpPage\BagroundImages\c8fbf0fff80e635952e1cf4b40d151ca.jpg
     - assets\SignUpPage\BagroundImages\ad7b5ceeda4d9504aa0caf110f9edd11.jpg
 
   # To add assets to your application, add an assets section, like this:

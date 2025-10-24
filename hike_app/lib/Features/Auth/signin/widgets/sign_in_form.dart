@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class SignUpForm extends StatelessWidget {
-  const SignUpForm({super.key});
+class SignInForm extends StatelessWidget {
+  const SignInForm({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,23 +10,22 @@ class SignUpForm extends StatelessWidget {
       width: 347,
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 30),
       decoration: BoxDecoration(
-        border: Border.all(color: Colors.white),
-        color: Colors.white.withOpacity(0.0),
+        border: Border.all(color: Colors.white70.withOpacity(0.5)),
+        color: Colors.white.withOpacity(0),
         borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(color: Colors.white.withOpacity(0.2), blurRadius: 2),
-        ],
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Title
-          Center(
+          // Title (Left aligned)
+          Align(
+            alignment: Alignment.centerLeft,
             child: Text(
-              'SignUp Dawg ✶★',
+              ' SignUp Dawg ⋆⭒˚.⋆',
               style: GoogleFonts.shadowsIntoLightTwo(
+                fontWeight: FontWeight.bold,
                 fontSize: 26,
-                color: Colors.brown.shade700,
+                color: Colors.white,
                 letterSpacing: 1.2,
               ),
             ),
@@ -65,15 +64,15 @@ class SignUpForm extends StatelessWidget {
                   borderRadius: BorderRadius.circular(40),
                 ),
                 padding: const EdgeInsets.symmetric(
-                  horizontal: 28,
-                  vertical: 6,
+                  horizontal: 30,
+                  vertical: 2,
                 ),
               ),
               onPressed: () {},
               child: Text(
                 'Signup',
                 style: GoogleFonts.poppins(
-                  fontSize: 16,
+                  fontSize: 14,
                   fontWeight: FontWeight.w600,
                   color: Colors.black,
                 ),
@@ -94,10 +93,10 @@ class SignUpForm extends StatelessWidget {
               ),
               Text(
                 'OR',
-                style: GoogleFonts.poppins(
-                  fontSize: 13,
+                style: GoogleFonts.roboto(
+                  fontSize: 10,
                   fontWeight: FontWeight.w600,
-                  color: Colors.black87,
+                  color: Colors.white,
                 ),
               ),
               Expanded(
@@ -131,23 +130,22 @@ class SignUpForm extends StatelessWidget {
               ),
             ],
           ),
-
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
 
           // Already have an account
-          Container(
+          SizedBox(
             height: 45,
             width: double.infinity,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(15),
-            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   'Already have an account ?  ',
-                  style: GoogleFonts.roboto(fontSize: 14, color: Colors.black),
+                  style: GoogleFonts.roboto(
+                    fontSize: 14,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
                 GestureDetector(
                   onTap: () {
@@ -156,9 +154,9 @@ class SignUpForm extends StatelessWidget {
                   child: Text(
                     'signin',
                     style: GoogleFonts.roboto(
-                      fontSize: 15,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black,
+                      fontSize: 16,
+                      color: Colors.white,
                     ),
                   ),
                 ),
@@ -189,7 +187,7 @@ class _SignUpTextField extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(color: Colors.grey.shade400),
-        borderRadius: BorderRadius.circular(25),
+        borderRadius: BorderRadius.circular(14),
       ),
       child: TextField(
         obscureText: obscure,
@@ -199,7 +197,7 @@ class _SignUpTextField extends StatelessWidget {
             child: Image.asset(iconPath, width: 24, height: 24),
           ),
           hintText: hint,
-          hintStyle: GoogleFonts.poppins(fontSize: 14),
+          hintStyle: GoogleFonts.roboto(fontSize: 14),
           border: InputBorder.none,
           contentPadding: const EdgeInsets.symmetric(
             horizontal: 15,
@@ -229,13 +227,6 @@ class _SocialIconButton extends StatelessWidget {
           shape: BoxShape.circle,
           border: Border.all(color: Colors.grey.shade400),
           color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.15),
-              blurRadius: 6,
-              offset: const Offset(1, 2),
-            ),
-          ],
         ),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
