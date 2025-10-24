@@ -51,6 +51,7 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
+    - assets\SignUpPage\Icons\google.png
     - assets\images\MayBe.jpg
     - assets\SignUpPage\e3b8c210b90a55cc4d87758a9aa076b0.jpg
     - assets\SignUpPage\3e1ba2310561992686fc7786af4e5a17.jpg

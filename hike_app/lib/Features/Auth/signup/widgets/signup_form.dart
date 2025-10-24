@@ -119,7 +119,7 @@ class SignUpForm extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   _SocialIconButton(
-                    iconPath: 'assets/SignUpPage/Icons/search.png',
+                    iconPath: 'assets/SignUpPage/Icons/google.png',
                     onTap: () {},
                   ),
                   const SizedBox(width: 20),
