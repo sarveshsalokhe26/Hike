@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hike_app/Features/Auth/signup/pages/sign_up_screen.dart';
 
 class SignInForm extends StatelessWidget {
   const SignInForm({super.key});
@@ -21,7 +22,7 @@ class SignInForm extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Text(
-              ' SignUp Dawg ⋆⭒˚.⋆',
+              ' Signin Dawg ⋆⭒˚.⋆',
               style: GoogleFonts.shadowsIntoLightTwo(
                 fontWeight: FontWeight.bold,
                 fontSize: 26,
@@ -45,14 +46,7 @@ class SignInForm extends StatelessWidget {
             hint: 'Password',
             obscure: true,
           ),
-          const SizedBox(height: 10),
 
-          // Confirm Password
-          const _SignUpTextField(
-            iconPath: 'assets/SignUpPage/Icons/padlock.png',
-            hint: 'Confirm Password',
-            obscure: true,
-          ),
           const SizedBox(height: 15),
 
           // Signup Button
@@ -70,7 +64,7 @@ class SignInForm extends StatelessWidget {
               ),
               onPressed: () {},
               child: Text(
-                'Signup',
+                'Signin',
                 style: GoogleFonts.poppins(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
@@ -115,7 +109,7 @@ class SignInForm extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               _SocialIconButton(
-                iconPath: 'assets/SignUpPage/Icons/search.png',
+                iconPath: 'assets/SignUpPage/Icons/google.png',
                 onTap: () {},
               ),
               const SizedBox(width: 20),
@@ -140,7 +134,7 @@ class SignInForm extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  'Already have an account ?  ',
+                  'Don’t have an account?  ',
                   style: GoogleFonts.roboto(
                     fontSize: 14,
                     color: Colors.white,
@@ -149,10 +143,15 @@ class SignInForm extends StatelessWidget {
                 ),
                 GestureDetector(
                   onTap: () {
-                    // TODO: Navigate to SignIn screen
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const HikeSignUpScreen(),
+                      ),
+                    );
                   },
                   child: Text(
-                    'signin',
+                    'signup',
                     style: GoogleFonts.roboto(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
